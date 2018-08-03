@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./icons/css/all.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Generador de Contraseñas</title>
 </head>
+
 <body>
+  <div class="container">
+    <header class="logo">
+      <h1>Generador de Contraseñas</h1>
+    </header>
+    <main>
+      <form action="" class="container form" id="form">
+        <div class="row">
+          <div class="col">
+            <label for="number" class="text">Número de caracteres</label>
+          </div>
+          <div class="col">
+            <button class="minus" id="minus">
+              <i class="fas fa-minus"></i>
+            </button>
+            <input class="number" id="number" readonly value="12">
+            <button class="plus" id="plus">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text">Incluir Simbolos</p>
+          </div>
+          <div class="col">
+            <button class="check" id="checkSymbol">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text">Incluir Números</p>
+          </div>
+          <div class="col">
+            <button class="check" id="checkNumber">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="text">Incluir Mayusculas</p>
+          </div>
+          <div class="col">
+            <button class="check" id="checkMayus">
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button class="check" id="checkMayus">
+              Generar
+              <span>
+                <i class="fas fa-lock"></i>
+              </span>
+            </button>
+          </div>
+          <div class="col">
+            <input type="text" class="pass" id="pass" readonly value="123456">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col copy" id="copy">
+            <p>
+              <span>
+                <i class="fas fa-copy"></i>
+              </span>
+              Texto copiado.
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      Creado por Darío Guillén XD
+    </footer>
+  </div>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
