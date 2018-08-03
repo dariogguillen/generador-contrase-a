@@ -5,4 +5,141 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-color: #283149;
+  color: #dbedf3;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+.container {
+  border: solid 2px #404b69;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  margin: 10% auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.row {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 0.7em;
+}
+.col {
+  width: 48%;
+  display: flex;
+  align-content: center;
+}
+p {
+  margin: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  font-size: 1em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  background-color: #404b69;
+  color: #dbedf3;
+  border: 1px solid #404b69;
+  border-radius: 5px;
+  transition: ease 0.3s all;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #404b69;
+  opacity: 0.7;
+}
+.input {
+  background-color: #283149;
+  color: #dbedf3;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-align: center;
+  cursor: default;
+}
+.minus {
+  border-radius: 5px 0 0 5px;
+}
+.plus {
+  border-radius: 0 5px 5px 0;
+}
+.pass {
+  border: solid 1px rgba(220, 237, 243, 0.5);
+  border-radius: 5px;
+  transition: all ease 0.3s;
+}
+.pass:hover {
+  border: solid 1px rgba(220, 237, 243, 0.8);
+}
+.row-gen .col:first-child {
+  width: 35%;
+}
+.row-gen .col:last-child {
+  width: 55%;
+}
+.btn.gen i {
+  font-size: 15px;
+  padding-left: 20px;
+}
+.row-copy {
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 0;
+  color: #283149;
+}
+.active {
+  color: #dbedf3;
+}
+.copy p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.5em;
+}
+.footer {
+  font-size: 0.5em;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 550px) {
+  .row {
+    flex-direction: column;
+  }
+  .col,
+  .row-gen .col:first-child,
+  .row-gen .col:last-child {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .row-mayus {
+    padding-bottom: 20px;
+  }
+  .row-gen {
+    border-top: 1px solid #404b69;
+    padding: 25px;
+  }
+  .row-gen .col:first-child {
+    margin-bottom: 25px;
+  }
+  .text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
