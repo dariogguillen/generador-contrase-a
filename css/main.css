@@ -40,7 +40,7 @@ body {
   display: flex;
   align-content: center;
 }
-p {
+.text {
   margin: 0;
 }
 .buttons {
@@ -90,6 +90,9 @@ p {
 .pass:hover {
   border: solid 1px rgba(220, 237, 243, 0.8);
 }
+.pass::selection {
+  background-color: #283149;
+}
 .row-gen .col:first-child {
   width: 35%;
 }
@@ -106,13 +109,26 @@ p {
   padding-top: 0;
   color: #283149;
 }
-.active {
-  color: #dbedf3;
+.deactive {
+  background-color: rgba(64, 75, 105,.3);
 }
-.copy p {
+.deactive:hover {
+  background-color: rgba(64, 75, 105,.2);
+}
+.copy {
+  width: 55%;
+  height: 20px;
+}
+.copy-text {
+  display: none;
+  color: #dbedf3;
   width: 100%;
   text-align: center;
   font-size: 0.5em;
+  margin-top: 0;
+}
+.active {
+  display: block;
 }
 .footer {
   font-size: 0.5em;
